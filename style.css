@@ -1,0 +1,115 @@
+*{box-sizing:border-box;text-transform:capitalize;color:white;font-family:verdana;}
+.main{
+	background-image:linear-gradient(hsla(0,0%,50%,0.5),rgba(0,200,250,0.5)),url("images/bg.jpg");
+	background-position:center;
+	background-size:cover;	
+	background-repeat:no-repeat;
+	margin:0px;
+	padding:0px;
+	height:100vh;
+}
+body{margin:0px;}
+nav{background-color:rgb(0,150,150);
+	padding:0.5rem 1rem;
+	margin:0px;}
+nav ul {
+	display:grid;
+	grid-template-columns:repeat(7,1fr);
+	}
+nav ul #logo {
+	grid-column:1 /span 2;
+	text-align:left;
+	font-family:arial black;
+	font-size:1rem;
+	}
+nav ul li,nav ul li a{
+	text-decoration:none;
+	list-style-type:none;
+	color:white;
+	text-transform:uppercase;
+	text-align:right;
+
+}
+nav ul a:hover{
+	text-decoration:underline;	
+}
+section{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	height:90vh;
+	}
+section h1{
+	font-size:5.5rem;
+	font-family:segoe script;
+	margin:0.2rem;}
+section p{
+	font-size:1.5rem;
+	margin:0.2rem;}
+
+section input{
+	padding:0.8rem 1.5rem;
+	color:rgb(0,150,150);
+	margin:2.5rem 3rem;
+	border-radius:1.5rem;
+	border:none;
+	width:13.2rem;
+	}
+section input:hover{
+	background-color:rgb(0,150,150);
+	color:white;
+	}
+.location{
+	background-color:rgb(0,150,150);
+	padding:1.2rem;
+	height:auto;
+	}
+.location h2{font-size:2.5rem;margin:0px 0px 1.5rem 0px;border:2px solid white;padding:0rem 1.5rem;border-width:0px 0px 2px 2px;}
+.locationdiv{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	grid-gap:1.1rem;
+}
+#image{height:100%;width:100%;}
+.location iframe{width:100%;}
+footer{
+	display:grid;
+	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+	grid-gap:1.2rem;
+	padding:1.2rem;
+	font-size:1.1rem;
+	background-color:rgba(0,150,150,0.9);
+	height:auto;
+	}
+footer div{
+	display:flax;
+	flex-direction:column;
+	justify-content:center;
+	padding:1.1rem;
+	text-align:center;
+
+	border-width:0px 2px 2px 0px;
+	}
+#contactdiv div{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	background:none;
+	padding:0.5rem;
+	border:none;
+	}
+footer .icons{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	grid-gap:1.2rem;
+	}
+
+@media only screen and (max-width:414){
+	nav ul {
+	display:grid;
+	grid-template-columns:repeat(2,1fr);
+	align-items:grid-end;
+	}
+	
+}
