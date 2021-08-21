@@ -1,6 +1,6 @@
 *{box-sizing:border-box;text-transform:capitalize;color:white;font-family:verdana;}
 .main{
-	background-image:linear-gradient(hsla(0,0%,50%,0.5),rgba(0,200,250,0.5)),url("images/bg.jpg");
+	background-image:linear-gradient(hsla(0,0%,50%,0.5),rgba(0,200,250,0.5)),url("bg.jpg");
 	background-position:center;
 	background-size:cover;	
 	background-repeat:no-repeat;
